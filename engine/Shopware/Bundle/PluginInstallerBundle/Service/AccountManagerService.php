@@ -87,36 +87,6 @@ class AccountManagerService
     }
 
     /**
-     * Requests the creation of a new Shopware ID anc account (registration action)
-     *
-     * @deprecated since 5.7.8, will be removed in 5.8 without replacement.
-     *
-     * @param string $shopwareId
-     * @param string $email
-     * @param string $password
-     * @param int    $localeId
-     *
-     * @throws Exception
-     *
-     * @return array
-     */
-    public function registerAccount($shopwareId, $email, $password, $localeId)
-    {
-        $postData = [
-            'shopwareId' => $shopwareId,
-            'email' => $email,
-            'password' => $password,
-            'localeId' => $localeId,
-        ];
-
-        try {
-            return $this->storeClient->doPostRequest('/users', $postData);
-        } catch (StoreException $se) {
-            throw $this->translateExceptionMessage($se);
-        }
-    }
-
-    /**
      * Gets a list of locales supported by the SBP
      *
      * @throws Exception
