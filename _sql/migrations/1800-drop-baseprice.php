@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 /**
  * Shopware 5
  * Copyright (c) shopware AG
@@ -21,14 +22,12 @@
  * trademark license. Therefore any rights, title and interest in
  * our trademarks remain entirely with us.
  */
+use Shopware\Components\Migrations\AbstractMigration;
 
-class Migrations_Migration1706 extends Shopware\Components\Migrations\AbstractMigration
+class Migrations_Migration1800 extends AbstractMigration
 {
     public function up($modus)
     {
-        if ($modus !== self::MODUS_INSTALL) {
-            return;
-        }
         $sql = 'ALTER TABLE `s_articles_prices` DROP `baseprice`;';
         $this->addSql($sql);
     }

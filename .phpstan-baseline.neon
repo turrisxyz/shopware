@@ -9086,11 +9086,6 @@ parameters:
 			path: engine/Shopware/Bundle/PluginInstallerBundle/Service/AccountManagerService.php
 
 		-
-			message: "#^Method Shopware\\\\Bundle\\\\PluginInstallerBundle\\\\Service\\\\AccountManagerService\\:\\:registerAccount\\(\\) return type has no value type specified in iterable type array\\.$#"
-			count: 1
-			path: engine/Shopware/Bundle/PluginInstallerBundle/Service/AccountManagerService.php
-
-		-
 			message: "#^Method Shopware\\\\Bundle\\\\PluginInstallerBundle\\\\Service\\\\AccountManagerService\\:\\:verifyDomain\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: engine/Shopware/Bundle/PluginInstallerBundle/Service/AccountManagerService.php
@@ -28276,22 +28271,7 @@ parameters:
 			path: engine/Shopware/Controllers/Backend/Feedback.php
 
 		-
-			message: "#^Cannot call method getId\\(\\) on Shopware\\\\Bundle\\\\PluginInstallerBundle\\\\Struct\\\\LocaleStruct\\|null\\.$#"
-			count: 1
-			path: engine/Shopware/Controllers/Backend/FirstRunWizard.php
-
-		-
-			message: "#^Method Shopware_Controllers_Backend_FirstRunWizard\\:\\:loginAction\\(\\) has no return type specified\\.$#"
-			count: 1
-			path: engine/Shopware/Controllers/Backend/FirstRunWizard.php
-
-		-
 			message: "#^Method Shopware_Controllers_Backend_FirstRunWizard\\:\\:registerDomainAction\\(\\) has no return type specified\\.$#"
-			count: 1
-			path: engine/Shopware/Controllers/Backend/FirstRunWizard.php
-
-		-
-			message: "#^Method Shopware_Controllers_Backend_FirstRunWizard\\:\\:registerNewIdAction\\(\\) has no return type specified\\.$#"
 			count: 1
 			path: engine/Shopware/Controllers/Backend/FirstRunWizard.php
 
